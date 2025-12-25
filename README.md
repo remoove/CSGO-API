@@ -14,10 +14,11 @@ GET https://raw.githubusercontent.com/ByMykel/CSGO-API/main/public/api/{language
 
 ## Currently Supported Languages
 
-| Language Name         | Language Code |
-| --------------------- | ------------- |
-| English               | en            |
-| Chinese (Simplified)  | zh-CN         |
+| Language Name | Language Code |
+|---------------|---------------|
+| English       | en            |
+| Russian       | ru            |
+| Ukrainian     | uk            |
 
 ## Adding More Languages
 

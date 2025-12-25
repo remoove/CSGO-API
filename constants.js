@@ -24,21 +24,26 @@ export const LANGUAGES_URL = [
         folder: "en",
         url: getLanguageUrl("english"),
     },
-    {
-        language: "schinese",
-        folder: "zh-CN",
-        url: getLanguageUrl("schinese"),
-    },
+    // {
+    //     language: "schinese",
+    //     folder: "zh-CN",
+    //     url: getLanguageUrl("schinese"),
+    // },
     // {
     //     language: "portuguese (Brazil)",
     //     folder: "pt-BR",
     //     url: getLanguageUrl("brazilian"),
     // },
-    // {
-    //     language: "russian",
-    //     folder: "ru",
-    //     url: getLanguageUrl("russian"),
-    // },
+    {
+        language: "ukrainian",
+        folder: "uk",
+        url: getLanguageUrl("ukrainian"),
+    },
+    {
+        language: "russian",
+        folder: "ru",
+        url: getLanguageUrl("russian"),
+    },
     // {
     //     language: "spanish",
     //     folder: "es-ES",
@@ -164,11 +169,7 @@ export const LANGUAGES_URL = [
     //     folder: "tr",
     //     url: getLanguageUrl("turkish"),
     // },
-    // {
-    //     language: "ukrainian",
-    //     folder: "uk",
-    //     url: getLanguageUrl("ukrainian"),
-    // },
+
     // {
     //     language: "vietnamese",
     //     folder: "vi",
