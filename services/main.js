@@ -16,7 +16,11 @@ export const state = {};
 
 export const loadItemsGame = async () => {
     await axios
-        .get(ITEMS_GAME_URL)
+        .get(ITEMS_GAME_URL, {
+            headers: process.env.GITHUB_TOKEN
+                ? { Authorization: `Bearer ${process.env.GITHUB_TOKEN}` }
+                : {},
+        })
         .then(data => {
             state.itemsGame = data.data.items_game;
 
@@ -62,7 +66,11 @@ export const loadItemsGame = async () => {
 
     await axios
         .get(
-            "https://raw.githubusercontent.com/ByMykel/counter-strike-image-tracker/refs/heads/main/static/default_generated.json"
+            "https://raw.githubusercontent.com/ByMykel/counter-strike-image-tracker/refs/heads/main/static/default_generated.json", {
+                headers: process.env.GITHUB_TOKEN
+                    ? { Authorization: `Bearer ${process.env.GITHUB_TOKEN}` }
+                    : {},
+            }
         )
         .then(data => {
             state.itemsGame.alternate_icons2.weapon_icons = data.data
@@ -634,7 +642,11 @@ export const loadProPlayers = () => {
 
 export const loadImagesInventory = async () => {
     try {
-        const response = await axios.get(IMAGES_INVENTORY_URL);
+        const response = await axios.get(IMAGES_INVENTORY_URL, {
+            headers: process.env.GITHUB_TOKEN
+                ? { Authorization: `Bearer ${process.env.GITHUB_TOKEN}` }
+                : {},
+        });
         state.cdnImages = response.data;
     } catch (error) {
         throw new Error(`Error loading images inventory`, { cause: error });
@@ -845,7 +857,11 @@ const getItemFromKey = key => {
 export const getManifestId = async () => {
     return axios
         .get(
-            "https://api.github.com/repos/ByMykel/counter-strike-file-tracker/contents/static/manifestId.txt"
+            "https://api.github.com/repos/ByMykel/counter-strike-file-tracker/contents/static/manifestId.txt", {
+                headers: process.env.GITHUB_TOKEN
+                    ? { Authorization: `Bearer ${process.env.GITHUB_TOKEN}` }
+                    : {},
+            }
         )
         .then(response => {
             // Decode base64 content and trim whitespace
