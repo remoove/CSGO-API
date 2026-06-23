@@ -17,8 +17,8 @@ export const state = {};
 export const loadItemsGame = async () => {
     await axios
         .get(ITEMS_GAME_URL, {
-            headers: process.env.GITHUB_TOKEN
-                ? { Authorization: `Bearer ${process.env.GITHUB_TOKEN}` }
+            headers: process.env.GH_TOKEN
+                ? { Authorization: `Bearer ${process.env.GH_TOKEN}` }
                 : {},
         })
         .then(data => {
@@ -67,8 +67,8 @@ export const loadItemsGame = async () => {
     await axios
         .get(
             "https://raw.githubusercontent.com/ByMykel/counter-strike-image-tracker/refs/heads/main/static/default_generated.json", {
-                headers: process.env.GITHUB_TOKEN
-                    ? { Authorization: `Bearer ${process.env.GITHUB_TOKEN}` }
+                headers: process.env.GH_TOKEN
+                    ? { Authorization: `Bearer ${process.env.GH_TOKEN}` }
                     : {},
             }
         )
@@ -643,8 +643,8 @@ export const loadProPlayers = () => {
 export const loadImagesInventory = async () => {
     try {
         const response = await axios.get(IMAGES_INVENTORY_URL, {
-            headers: process.env.GITHUB_TOKEN
-                ? { Authorization: `Bearer ${process.env.GITHUB_TOKEN}` }
+            headers: process.env.GH_TOKEN
+                ? { Authorization: `Bearer ${process.env.GH_TOKEN}` }
                 : {},
         });
         state.cdnImages = response.data;
@@ -858,8 +858,8 @@ export const getManifestId = async () => {
     return axios
         .get(
             "https://api.github.com/repos/ByMykel/counter-strike-file-tracker/contents/static/manifestId.txt", {
-                headers: process.env.GITHUB_TOKEN
-                    ? { Authorization: `Bearer ${process.env.GITHUB_TOKEN}` }
+                headers: process.env.GH_TOKEN
+                    ? { Authorization: `Bearer ${process.env.GH_TOKEN}` }
                     : {},
             }
         )

@@ -32,7 +32,7 @@ jobs:
       - name: Update data
         id: update-data
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
         run: npm run ${{ github.event.inputs.force == 'true' && 'update-data-force' || 'update-data' }}
       
       - name: Read manifestIdUpdate.txt
@@ -45,7 +45,7 @@ jobs:
       - name: Group data
         id: group-data
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
         run: npm run ${{ github.event.inputs.force == 'true' && 'group-data-force' || 'group-data' }}
       
       - name: Read manifestIdGroup.txt
