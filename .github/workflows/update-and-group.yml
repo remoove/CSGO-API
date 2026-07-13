@@ -1,6 +1,8 @@
 name: Update and Group JSON API
 
 on:
+  repository_dispatch:
+    types: [game-images-updated]
   workflow_dispatch:
     inputs:
       force:
@@ -8,6 +10,11 @@ on:
         required: false
         default: false
         type: boolean
+      languages:
+        description: "Comma-separated folder codes (e.g. en,ru,uk) or 'all'. Empty = use vars.LANGUAGES."
+        required: false
+        default: ""
+        type: string
   schedule:
     - cron: "0 3 * * *"
 
@@ -19,43 +26,44 @@ jobs:
   update-and-group:
     runs-on: ubuntu-latest
 
+    env:
+      LANGUAGES: ${{ github.event.inputs.languages || vars.LANGUAGES || 'en,ru,uk' }}
+      FORCE_FLAG: ${{ github.event.inputs.force == 'true' && '--force' || '' }}
+      GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v6
         with:
           node-version: 24
-      
+
       - name: Install dependencies
         run: npm install
-      
+
       # Update step
       - name: Update data
         id: update-data
-        env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
-        run: npm run ${{ github.event.inputs.force == 'true' && 'update-data-force' || 'update-data' }}
-      
+        run: node update.js $FORCE_FLAG ${LANGUAGES:+--languages "$LANGUAGES"}
+
       - name: Read manifestIdUpdate.txt
         id: manifestIdUpdate
         uses: juliangruber/read-file-action@v1
         with:
           path: ./manifestIdUpdate.txt
-      
+
       # Group step
       - name: Group data
         id: group-data
-        env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
-        run: npm run ${{ github.event.inputs.force == 'true' && 'group-data-force' || 'group-data' }}
-      
+        run: node group.js $FORCE_FLAG ${LANGUAGES:+--languages "$LANGUAGES"}
+
       - name: Read manifestIdGroup.txt
         id: manifestIdGroup
         uses: juliangruber/read-file-action@v1
         with:
           path: ./manifestIdGroup.txt
-      
+
       # Commit all changes
       - name: Commit & push changes
-        uses: stefanzweifel/git-auto-commit-action@v4
+        uses: stefanzweifel/git-auto-commit-action@v7
         with:
           commit_message: "[bot::update-group] manifest ${{ steps.manifestIdUpdate.outputs.content }}"

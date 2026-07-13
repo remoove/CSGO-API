@@ -332,7 +332,25 @@ export const getCategory = weapon => {
         case "studded_hydra_gloves":
             return "sfui_invpanel_filter_gloves";
         case "weapon_taser":
+        case "weapon_healthshot":
             return "loadoutslot_equipment";
+        case "weapon_flashbang":
+        case "weapon_hegrenade":
+        case "weapon_smokegrenade":
+        case "weapon_molotov":
+        case "weapon_decoy":
+        case "weapon_incgrenade":
+            // No idea what translation should be used for this
+            return "loadoutslot_grenade";
+        case "weapon_c4":
+            // No idea what translation should be used for this
+            return "loadoutslot_c4";
+        case "ct_gloves":
+        case "t_gloves":
+            return "sfui_invpanel_filter_gloves";
+        case "weapon_knife":
+        case "weapon_knife_t":
+            return "sfui_invpanel_filter_melee";
     }
 
     return null;
@@ -678,6 +696,10 @@ export function getFinishStyleLink(id) {
 export function getPlayerNameOfHighlight(id, players) {
     id = id.split("_")[1];
 
+    // Strip the stage prefix. Budapest 2025 uses a dash (qf-, sf-, gf-) while
+    // Cologne 2026 glues it to the player name (st1, st2, st3, qf, sf, gf).
+    id = id.replace(/^(st\d+|qf|sf|gf)-?/, "");
+
     if (id.startsWith("shiro")) id = id.replace("shiro", "sh1ro");
     if (id.startsWith("magix")) id = id.replace("magix", "magixx");
     if (id.startsWith("torszi")) id = id.replace("torszi", "torzsi");
@@ -693,6 +715,10 @@ export function getPlayerNameOfHighlight(id, players) {
 
     if (id === "mongolzscaredofs1mplevsfazeonanubis") id = "s1mple";
     if (id === "boosttorszitoentryvsspiritonnuke") id = "torzsi";
+
+    // Team-level highlights (team entrance, victory, trophy lifting) have no single
+    // player. Return null so they get flagged as type "team".
+    if (/(entrance|victory|win|trophyliftingmoment)$/.test(id)) return null;
 
     return Object.values(players).find(name => id.startsWith(name.toLowerCase())) ?? "Unknown Player";
 }
