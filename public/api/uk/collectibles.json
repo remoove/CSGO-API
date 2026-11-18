@@ -11526,6 +11526,196 @@
   }
  },
  {
+  "id": "collectible-5410",
+  "name": "Глядацька перепустка «Сінгапур 2026»",
+  "description": "Це запечатана глядацька перепустка великого турніру «PGL Сінгапур 2026». Якщо її відкрити, вона дасть монету «Сінгапур 2026», яка відстежує ваш поступ упродовж події, а також доступ до прогнозів на турнір, позначок чату Steam.tv, виконання завдань та необмежену кількість командних графіті на час турніру. \\n\\nПокращити монету «Сінгапур 2026» можна через виконання завдань. Отримуйте 300 жетонів «Сінгапур 2026» щоразу, як покращуєте свою монету.\\n\\n50% коштів, отриманих із продажу цієї перепустки, буде передано гравцям та організаціям, що беруть участь у цьому турнірі.",
+  "def_index": "5410",
+  "rarity": {
+   "id": "rarity_common",
+   "name": "звичайний предмет",
+   "color": "#b0c3d9"
+  },
+  "type": "Tournament Pass",
+  "genuine": false,
+  "market_hash_name": "Singapore 2026 Viewer Pass",
+  "image": "https://raw.githubusercontent.com/ByMykel/counter-strike-image-tracker/main/static/panorama/images/econ/tournaments/singapore2026/singapore2026_pass_png.png",
+  "original": {
+   "item_name": "#CSGO_TournamentPass_singapore2026",
+   "image_inventory": "econ/tournaments/singapore2026/singapore2026_pass"
+  }
+ },
+ {
+  "id": "collectible-5411",
+  "name": "Глядацька перепустка «Сінгапур 2026» + 900 жетонів",
+  "description": "Це запечатана глядацька перепустка великого турніру з CS2 «PGL Сінгапур 2026». Якщо її відкрити, ви отримаєте монету «Сінгапур 2026», яка відстежує ваш поступ упродовж події, а також надає повний доступ до прогнозів, позначок чату Steam.tv, виконання завдань та необмежену кількість командних графіті на час турніру.\\n\\nПокращити монету «Сінгапур 2026» можна через виконання завдань. Отримуйте 300 жетонів «Сінгапур 2026» щоразу, як покращуєте свою монету.\\n\\nЦя глядацька перепустка одразу активує монету «Сінгапур 2026» та надає 900 жетонів.\\n\\n50% коштів, отриманих із продажу цієї перепустки, буде передано гравцям та організаціям, що беруть участь у цьому турнірі.",
+  "def_index": "5411",
+  "rarity": {
+   "id": "rarity_common",
+   "name": "звичайний предмет",
+   "color": "#b0c3d9"
+  },
+  "type": "Tournament Pass",
+  "genuine": false,
+  "market_hash_name": "Singapore 2026 Viewer Pass + 900 Tokens",
+  "image": "https://raw.githubusercontent.com/ByMykel/counter-strike-image-tracker/main/static/panorama/images/econ/tournaments/singapore2026/singapore2026_pass_pack_png.png",
+  "original": {
+   "item_name": "#CSGO_TournamentPass_singapore2026_pack",
+   "image_inventory": "econ/tournaments/singapore2026/singapore2026_pass_pack"
+  }
+ },
+ {
+  "id": "collectible-5412",
+  "name": "Монета «Сінгапур 2026»",
+  "description": "Це пам’ятна монета великого турніру з CS2 «PGL Сінгапур 2026», яка відстежує ваш поступ упродовж події, дає повний доступ до прогнозів на турнір, позначок чату Steam.tv, виконання завдань і необмежену кількість командних графіті на час турніру.\\n\\nПокращити монету «Сінгапур 2026» можна через виконання завдань. Отримуйте 300 жетонів «Сінгапур 2026» щоразу, як покращуєте свою монету.",
+  "def_index": "5412",
+  "rarity": {
+   "id": "rarity_ancient",
+   "name": "надзвичайний предмет",
+   "color": "#eb4b4b"
+  },
+  "type": "Pick'Em Coin",
+  "genuine": false,
+  "market_hash_name": null,
+  "image": "https://raw.githubusercontent.com/ByMykel/counter-strike-image-tracker/main/static/panorama/images/econ/tournaments/singapore2026/singapore2026_coin_bronze_png.png",
+  "original": {
+   "item_name": "#CSGO_TournamentJournal_singapore2026",
+   "image_inventory": "econ/tournaments/singapore2026/singapore2026_coin_bronze"
+  }
+ },
+ {
+  "id": "collectible-5413",
+  "name": "Срібна монета «Сінгапур 2026»",
+  "description": "Це пам’ятна монета великого турніру з CS2 «PGL Сінгапур 2026», яка відстежує ваш поступ упродовж події, дає повний доступ до прогнозів на турнір, позначок чату Steam.tv, виконання завдань і необмежену кількість командних графіті на час турніру.\\n\\nПокращити монету «Сінгапур 2026» можна через виконання завдань. Отримуйте 300 жетонів «Сінгапур 2026» щоразу, як покращуєте свою монету.",
+  "def_index": "5413",
+  "rarity": {
+   "id": "rarity_ancient",
+   "name": "надзвичайний предмет",
+   "color": "#eb4b4b"
+  },
+  "type": "Pick'Em Coin",
+  "genuine": false,
+  "market_hash_name": null,
+  "image": "https://raw.githubusercontent.com/ByMykel/counter-strike-image-tracker/main/static/panorama/images/econ/tournaments/singapore2026/singapore2026_coin_silver_png.png",
+  "original": {
+   "item_name": "#CSGO_TournamentJournal_singapore2026_Silver",
+   "image_inventory": "econ/tournaments/singapore2026/singapore2026_coin_silver"
+  }
+ },
+ {
+  "id": "collectible-5414",
+  "name": "Золота монета «Сінгапур 2026»",
+  "description": "Це пам’ятна монета великого турніру з CS2 «PGL Сінгапур 2026», яка відстежує ваш поступ упродовж події, дає повний доступ до прогнозів на турнір, позначок чату Steam.tv, виконання завдань і необмежену кількість командних графіті на час турніру.\\n\\nПокращити монету «Сінгапур 2026» можна через виконання завдань. Отримуйте 300 жетонів «Сінгапур 2026» щоразу, як покращуєте свою монету.",
+  "def_index": "5414",
+  "rarity": {
+   "id": "rarity_ancient",
+   "name": "надзвичайний предмет",
+   "color": "#eb4b4b"
+  },
+  "type": "Pick'Em Coin",
+  "genuine": false,
+  "market_hash_name": null,
+  "image": "https://raw.githubusercontent.com/ByMykel/counter-strike-image-tracker/main/static/panorama/images/econ/tournaments/singapore2026/singapore2026_coin_gold_png.png",
+  "original": {
+   "item_name": "#CSGO_TournamentJournal_singapore2026_Gold",
+   "image_inventory": "econ/tournaments/singapore2026/singapore2026_coin_gold"
+  }
+ },
+ {
+  "id": "collectible-5415",
+  "name": "Діамантова монета «Сінгапур 2026»",
+  "description": "Це пам’ятна монета великого турніру з CS2 «PGL Сінгапур 2026», яка відстежує ваш поступ упродовж події, дає повний доступ до прогнозів на турнір, позначок чату Steam.tv, виконання завдань і необмежену кількість командних графіті на час турніру.\\n\\nПокращити монету «Сінгапур 2026» можна через виконання завдань. Отримуйте 300 жетонів «Сінгапур 2026» щоразу, як покращуєте свою монету.",
+  "def_index": "5415",
+  "rarity": {
+   "id": "rarity_ancient",
+   "name": "надзвичайний предмет",
+   "color": "#eb4b4b"
+  },
+  "type": "Pick'Em Coin",
+  "genuine": false,
+  "market_hash_name": null,
+  "image": "https://raw.githubusercontent.com/ByMykel/counter-strike-image-tracker/main/static/panorama/images/econ/tournaments/singapore2026/singapore2026_coin_crystal_png.png",
+  "original": {
+   "item_name": "#CSGO_TournamentJournal_singapore2026_Crystal",
+   "image_inventory": "econ/tournaments/singapore2026/singapore2026_coin_crystal"
+  }
+ },
+ {
+  "id": "collectible-5419",
+  "name": "Чемпіон «PGL Сінгапур 2026»",
+  "description": "Цю нагороду вручено переможцю великого турніру з CS2 «PGL Сінгапур 2026».",
+  "def_index": "5419",
+  "rarity": {
+   "id": "rarity_ancient",
+   "name": "надзвичайний предмет",
+   "color": "#eb4b4b"
+  },
+  "type": "Tournament Finalist Trophy",
+  "genuine": false,
+  "market_hash_name": null,
+  "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGJai2l-lQ8ndwMWvJjSD91ll_J7L6Uq1fh75n5vw9C1V_Lyobv0_IabEDDfDlLgis7Q7TXuylE1-tTvSmduodHjGOwElAsEiQu9crFDmxSMnd7Jc",
+  "original": {
+   "item_name": "#CSGO_CollectibleCoin_singapore2026_Champion",
+   "image_inventory": "econ/status_icons/trophy_cs2_champions"
+  }
+ },
+ {
+  "id": "collectible-5420",
+  "name": "Фіналіст «PGL Сінгапур 2026»",
+  "description": "Цю нагороду вручено фіналісту великого турніру з CS2 «PGL Сінгапур 2026».",
+  "def_index": "5420",
+  "rarity": {
+   "id": "rarity_ancient",
+   "name": "надзвичайний предмет",
+   "color": "#eb4b4b"
+  },
+  "type": "Tournament Finalist Trophy",
+  "genuine": false,
+  "market_hash_name": null,
+  "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGJai2l-lQ8ndwMWvJjSD91ll_J7L6Uq1fhv4kJfs9DFP_Lysa_w4JqGQDWaVkOp36bM4F3-1lEx1sG_XzNqtcn7DaFIhA5AiRuANrFDmxWMFZezK",
+  "original": {
+   "item_name": "#CSGO_CollectibleCoin_singapore2026_Finalist",
+   "image_inventory": "econ/status_icons/trophy_cs2_finalists"
+  }
+ },
+ {
+  "id": "collectible-5421",
+  "name": "Півфіналіст «PGL Сінгапур 2026»",
+  "description": "Цю нагороду вручено півфіналісту великого турніру з CS2 «PGL Сінгапур 2026».",
+  "def_index": "5421",
+  "rarity": {
+   "id": "rarity_ancient",
+   "name": "надзвичайний предмет",
+   "color": "#eb4b4b"
+  },
+  "type": "Tournament Finalist Trophy",
+  "genuine": false,
+  "market_hash_name": null,
+  "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGJai2l-lQ8ndwMWvJjSD91ll_J7L6Uq1fhv4kJfs9DFP_Lysa_w4JqGQDWaVkOp36bM4F3-1lEx1sG_XzNqtcn7DaFIhA5AiRuANrFDmxWMFZezK",
+  "original": {
+   "item_name": "#CSGO_CollectibleCoin_singapore2026_Semifinalist",
+   "image_inventory": "econ/status_icons/trophy_cs2_finalists"
+  }
+ },
+ {
+  "id": "collectible-5422",
+  "name": "Чвертьфіналіст «PGL Сінгапур 2026»",
+  "description": "Цю нагороду вручено чвертьфіналісту великого турніру з CS2 «PGL Сінгапур 2026».",
+  "def_index": "5422",
+  "rarity": {
+   "id": "rarity_ancient",
+   "name": "надзвичайний предмет",
+   "color": "#eb4b4b"
+  },
+  "type": "Tournament Finalist Trophy",
+  "genuine": false,
+  "market_hash_name": null,
+  "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGJai2l-lQ8ndwMWvJjSD91ll_J7L6Uq1fhv4kJfs9DFP_Lysa_w4JqGQDWaVkOp36bM4F3-1lEx1sG_XzNqtcn7DaFIhA5AiRuANrFDmxWMFZezK",
+  "original": {
+   "item_name": "#CSGO_CollectibleCoin_singapore2026_Quarterfinalist",
+   "image_inventory": "econ/status_icons/trophy_cs2_finalists"
+  }
+ },
+ {
   "id": "collectible-6001",
   "name": "Значок «Dust II» (з першої партії)",
   "description": "Це колекційний значок першої серії. Його можна показати у своєму профілі.",
